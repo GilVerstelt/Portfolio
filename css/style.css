@@ -2,7 +2,7 @@
   --dark: hsl(223, 9%, 15%);
   --faded: hsl(0, 0%, 45%);
   --light: hsl(0, 0%, 100%);
-  --primary: #1a62ff;
+  --primary: hsl(221, 100%, 55%);
 
   --title: 4rem;
   --subtitle: 3.2rem;
