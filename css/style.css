@@ -2,10 +2,11 @@
   --dark: hsl(223, 9%, 15%);
   --faded: hsl(0, 0%, 45%);
   --light: hsl(0, 0%, 100%);
-  --primary: hsl(221, 100%, 55%);
+  --primary: #1a62ff;
 
   --title: 4rem;
   --subtitle: 3.2rem;
+  --quote: 1.8rem;
 }
 
 body {
@@ -17,6 +18,14 @@ h1 {
 }
 h2 {
   font-size: var(--subtitle);
+}
+h3 {
+  font-size: var(--quote);
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+}
+span {
+  color: var(--primary);
 }
 img {
   width: 100%;
@@ -30,6 +39,8 @@ img {
   margin-top: 10px;
 }
 .btn:hover {
+  opacity: 70%;
+  cursor: pointer;
 }
 p {
   line-height: 1.3;
@@ -54,7 +65,7 @@ nav ul li a {
   text-decoration: none;
   transition: all 0.2s;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: var(--primary);
   text-decoration: underline;
 }
@@ -89,6 +100,9 @@ nav ul li a:hover{
 .--dark {
   color: var(--dark);
 }
+.--right {
+  text-align: right;
+}
 @keyframes textShine {
   0% {
     background-position: 0% 50%;
@@ -108,6 +122,7 @@ header {
   line-height: 1.3;
   align-items: center;
 }
+
 .header__info {
   width: 70%;
 }
@@ -158,21 +173,47 @@ header {
   display: flex;
   padding-bottom: 10rem;
 }
-.animation {
-  display: flex;
-  align-items: center;
-  width: 50%;
-}
+
 .student-content {
   width: 50%;
 }
 .lottie-player {
   margin-left: auto;
 }
-footer {
-  background-color: var(--dark);
+.lottie-player-left {
+  margin-right: auto;
 }
-.footer-container{
+.projects {
+  display: flex;
+}
+.projects_main {
+  width: 50%;
+}
+.projects_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+  color: var(--light);
+}
+.projects_project {
+  width: 33%;
+  background-color: var(--primary);
+}
+.programming {
+  margin-top: 7rem;
+  display: flex;
+  padding-bottom: 10rem;
+}
+.programming__content {
+  width: 50%;
+}
+.animation {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.footer-container {
   display: flex;
   justify-content: space-between;
 }
@@ -183,6 +224,25 @@ footer {
 }
 ul {
   list-style: none;
+}
+.knowlege{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.knowlege h3{
+  padding-bottom: 20px;
+}
+.knowlege__content{
+  display: flex;
+
+}
+.knowlege__text{
+  width: 50%;
+}
+.knowlege__figure{
+  width: 50%;
 }
 .footer {
   background-color: var(--dark);
@@ -242,6 +302,30 @@ ul {
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
+}
+.projectPage{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectPage h2{
+  padding-bottom: 20px;
+}
+.projectPage__content {
+  display: flex;
+}
+.projectPage__text {
+  width: 50%;
+}
+.projectPage__img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.projectPage__img img{
+  max-width: 70%;
+  height: auto;
 }
 
 /*responsive*/

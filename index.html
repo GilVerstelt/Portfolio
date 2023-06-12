@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/effect.scss" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="images/favicon/GV_Logo.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon/GV_Logo.png" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://kit.fontawesome.com/32c3995e62.js" crossorigin="anonymous"></script>
@@ -19,12 +20,17 @@
         <li class="nav--logo"><a href="#">Gil Verstelt</a></li>
         <div>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
           <div class="nav__icons">
-            <a href="https://www.instagram.com/gilverstelt/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
-            <a href="https://www.facebook.com/gil.verstelt" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
-            <a href="https://www.linkedin.com/in/gil-verstelt-71144425b/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+            <a href="https://www.instagram.com/gilverstelt/" target="_blank"
+              ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+            <a href="https://www.facebook.com/gil.verstelt" target="_blank"
+              ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/gil-verstelt-71144425b/" target="_blank"
+              ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+            ></a>
           </div>
         </div>
       </ul>
@@ -42,14 +48,13 @@
           a career in web development, where i can bring my ideas to life and make a lasting impact
           on the digital landscape.
         </p>
-        <button class="btn" data-aos="fade-up">About me</button>
       </div>
       <div class="header__image">
-        <img data-aos="fade-left" src="./images/b799922c-8340-4b35-b6e6-5e7fe92474c1.JPG" alt="" />
+        <img src="./images/b799922c-8340-4b35-b6e6-5e7fe92474c1.JPG" alt="picture" />
       </div>
     </header>
     <!--Projecten----------------------------->
-    <section class="projecten">
+    <section class="projecten" id="projects">
       <div class="container">
         <h2 class="title" data-aos="fade-right">Projects</h2>
       </div>
@@ -58,44 +63,29 @@
           <h4 class="slider__title">Flappybird</h4>
           <p class="slider__text">Deze opdracht was voor @Work</p>
           <img class="slider__img" src="./images/flappybird.png" alt="flappybird" />
-          <button class="btn">Info</button>
+          <a href="pages/projects/falppy.html"><button class="btn">Info</button></a>
         </div>
 
         <div class="slider__item">
           <h4 class="slider__title">Gip</h4>
           <p class="slider__text">Eindwerk in het Secundair</p>
           <img class="slider__img" src="./images/Traverstelt.png" alt="flappybird" />
-          <button class="btn">Info</button>
+          <a href="pages/projects/gip.html"><button class="btn">Info</button></a>
         </div>
 
         <div class="slider__item">
           <h4 class="slider__title">Gip - webshop</h4>
           <p class="slider__text">Eindwerk in het Secundair</p>
           <img class="slider__img" src="./images/outtaHere.png" alt="flappybird" />
-          <button class="btn">Info</button>
+          <a href="pages/projects/gip-webschop.html"><button class="btn">Info</button></a>
         </div>
 
         <div class="slider__item">
           <h4 class="slider__title">ToDo</h4>
           <p class="slider__text">aplicatie ToDo</p>
           <img class="slider__img" src="./images/outtaHere.png" alt="flappybird" />
-          <button class="btn">Info</button>
+          <a href="pages/projects/todo.html"><button class="btn">Info</button></a>
         </div>
-
-        <div class="slider__item">
-          <h4 class="slider__title">ToDo</h4>
-          <p class="slider__text">aplicatie ToDo</p>
-          <img class="slider__img" src="./images/outtaHere.png" alt="flappybird" />
-          <button class="btn">Info</button>
-        </div>
-
-        <div class="slider__item">
-          <h4 class="slider__title">ToDo</h4>
-          <p class="slider__text">aplicatie ToDo</p>
-          <img class="slider__img" src="./images/outtaHere.png" alt="flappybird" />
-          <button class="btn">Info</button>
-        </div>
-      </div>
     </section>
     <!--Studenten section----------------------------->
     <section class="student container">
@@ -112,7 +102,7 @@
           Throughout my journey as a programming student at Artevelde Hogeschool, i gained the
           skills and knowledge necessary to excel in the world of web development.
         </p>
-        <button class="btn" data-aos="fade-up">My education</button>
+        <a href="pages/knowlege.html"><button class="btn" data-aos="fade-up">My knowledge</button></a>
       </div>
       <div class="animation">
         <lottie-player
@@ -126,6 +116,37 @@
           autoplay
         ></lottie-player>
       </div>
+    </section>
+
+    <section class="programming container">
+      <div class="animation">
+        <lottie-player
+        class="lottie-player-left"
+        data-aos="fade-right"
+            src="https://assets2.lottiefiles.com/private_files/lf30_8rz59u1h.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 400px"
+            loop
+            autoplay
+          ></lottie-player>
+      </div>
+      <div class="programming__content">
+        <h2 class="title --dark" data-aos="fade-left">Unleashing Digital Dreams</h2>
+        <hr />
+        <p>
+          As I sit here, contemplating my future and the endless possibilities that lie ahead, one
+          thing remains crystal clear in my mind: my burning desire to become a programmer. From the
+          depths of my being, I am drawn to the world of coding and the art of creating something
+          tangible out of mere lines of code.
+        </p>
+        <p>
+          Programming, to me, is not just a career choice; it is a passion that ignites my soul. The
+          ability to turn ideas into reality, to bring visions to life through the power of
+          technology, is an exhilarating prospect.
+        </p>
+      </div>
+
     </section>
 
     <footer class="footer">
@@ -160,14 +181,27 @@
           <div class="footer-col">
             <h4 data-aos="fade-right">follow Me</h4>
             <div class="social-links">
-              <a href="https://www.instagram.com/gilverstelt/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
-              <a href="https://www.facebook.com/gil.verstelt" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
-              <a href="https://www.linkedin.com/in/gil-verstelt-71144425b/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff"></i></a>
+              <a href="https://www.instagram.com/gilverstelt/" target="_blank"
+                ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+              ></a>
+              <a href="https://www.facebook.com/gil.verstelt" target="_blank"
+                ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/gil-verstelt-71144425b/" target="_blank"
+                ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+              ></a>
             </div>
           </div>
         </div>
         <div>
-          <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_GbabwrUY2k.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay ></lottie-player>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_GbabwrUY2k.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
       </div>
     </footer>
